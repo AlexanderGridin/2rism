@@ -1,0 +1,111 @@
+:root,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: Poppins, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* SHARED */
+
+.container {
+	max-width: 1360px;
+	width: 100%;
+	margin: auto;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.plain-list {
+	list-style: none;
+}
+
+/* HERO */
+
+.hero {
+	background-color: #161414;
+	color: #fff;
+	padding-top: 32px;
+}
+
+/* HEADER */
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 14px;
+}
+
+.nav {
+	max-width: 745px;
+	width: 100%;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav__list-item {
+	padding: 0 25px;
+}
+
+.nav__link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav__link:hover {
+	text-decoration: underline;
+}
+
+/* USER */
+
+.user {
+	display: flex;
+	align-items: center;
+	max-width: 145px;
+	width: 100%;
+}
+
+.user p {
+	margin: 0;
+}
+
+.user__text {
+	text-align: right;
+	margin-right: 10px;
+}
+
+.user__name {
+	font-weight: 500;
+}
+
+.user__avatar {
+	position: relative;
+}
+
+.user__avatar--notification::after {
+	content: "";
+	display: block;
+	border: 1px solid #000;
+	background-color: #f00;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
